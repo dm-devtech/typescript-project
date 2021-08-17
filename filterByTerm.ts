@@ -12,5 +12,13 @@ function filterByTerm(input: Array<Link>, searchTerm: string) {
       return arrayElement.url.match(regex);
     });
   }
+
+  const obj1: Link = {url: "string 1"}
+  const obj2: Link = {url: "string 2"}
+  const obj3: Link = {url: "string 3"}
+
+  const arrOfLinks: Array<Link> = [obj1, obj2, obj3]
+
+  const term: string = "java"
   
-  filterByTerm([{url: "string 1"}, {url: "string 2", id: 2, description: "descr-2"}], "java");
+  filterByTerm(arrOfLinks, term);
