@@ -1,4 +1,6 @@
 interface Link {
+  description: string;
+  id: number;
   url: string;
 }
 
@@ -11,4 +13,4 @@ function filterByTerm(input: Array<Link>, searchTerm: string) {
     });
   }
   
-  filterByTerm([{url: "string 1"}, {url: "string 2"}], "java");
+  filterByTerm([{url: "string 1", id: 1, description: "descr-1"}, {url: "string 2", id: 2, description: "descr-2"}], "java");
