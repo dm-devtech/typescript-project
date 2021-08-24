@@ -1,4 +1,10 @@
 "use strict";
+var link1 = {
+    description: "test description",
+    id: 1,
+    url: "test url",
+    language: "en"
+};
 function filterByTerm(input, searchTerm) {
     if (!searchTerm)
         throw Error("searchTerm cannot be empty");
