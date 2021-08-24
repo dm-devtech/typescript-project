@@ -4,6 +4,17 @@ interface Link {
   url: string;
 }
 
+interface TranslatedLink extends Link {
+  language: string;
+}
+
+const link1: TranslatedLink = {
+  description: "test description",
+  id: 1,
+  url: "test url",
+  language: "en"
+};
+
 function filterByTerm(input: Array<Link>, searchTerm: string) {
     if (!searchTerm) throw Error("searchTerm cannot be empty");
     if (!input.length) throw Error("inputArr cannot be empty");
